@@ -1,7 +1,3 @@
-Here is a description of the Redmine Merge Issues plugin in English:
-
----
-
 **Redmine Merge Issues Plugin**
 
 The Redmine Merge Issues plugin provides a feature to merge two issues within Redmine. This plugin allows users to combine all relevant information from one issue (referred to as issue B) into another issue (referred to as issue A), while preserving timestamps and maintaining comprehensive records of the merge.
@@ -22,7 +18,3 @@ The Redmine Merge Issues plugin provides a feature to merge two issues within Re
 
 **Usage**:
 The plugin adds a merge action button on each issue page (for users with appropriate permissions), enabling a straightforward merge process. This tool is particularly useful for managing duplicate tickets or consolidating related issues, enhancing data organization and reducing issue clutter within projects. 
-
----
-
-This plugin is compatible with Redmine versions 4.0.0 and higher.
