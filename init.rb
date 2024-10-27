@@ -7,5 +7,5 @@ Redmine::Plugin.register :redmine_merge_issues do
   version '0.1.0'
   requires_redmine :version_or_higher => '5.0.0'
 
-  permission :merge_issues, { merge_issues: [:merge, :select_issue] }, require: :member
+  permission :merge_issues, { merge_issues: [:merge, :select_issue] }, require: :member 
 end
