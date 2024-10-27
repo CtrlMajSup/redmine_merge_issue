@@ -1,0 +1,13 @@
+# config/locales/en.yml
+en:
+  merge_issues: "Merge"
+  cancel_merge: "Cancel"
+  error_label_not_found: "Issues not found for merging."
+  label_merge_success: "Merge was successful for the issues: %{obj}."
+  label_choose_dialog: "Choose an issue to merge"
+  label_title_merge: "Merge Request"
+  error_missing_issue_b_id: "there is nothing to merge"
+  permission_merge_issues: "Merge"
+
+
+

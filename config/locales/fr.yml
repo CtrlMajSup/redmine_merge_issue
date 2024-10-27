@@ -1,0 +1,10 @@
+# French strings
+fr:
+  label_merge_issues: "Fusionner"
+  cancel_merge: "Annuler"
+  error_label_not_found: "Issues non trouvées pour la fusion."
+  label_merge_success: "La fusion a été effectuée avec succès pour les issues : %{obj}."
+  label_choose_dialog: "Choisissez une issue à fusionner"
+  label_title_merge: "Demande de fusion"
+  error_missing_issue_b_id: "Il n'y a rien à fusionner"
+  permission_merge_issues: "Fusionner"

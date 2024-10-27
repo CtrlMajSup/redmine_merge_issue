@@ -1,3 +1,0 @@
-<% if User.current.allowed_to?(:merge_issues, @project) %>
-  <%= link_to 'Fusionner avec une autre issue', merge_issues_path(issue_a_id: @issue, issue_b_id: another_issue_id), method: :post, data: { confirm: 'Es-tu sûr de vouloir fusionner cette issue ?' } %>
-<% end %>

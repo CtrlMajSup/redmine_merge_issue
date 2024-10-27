@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-    post 'merge_issues/:issue_a_id/:issue_b_id', to: 'merge_issues#merge', as: 'merge_issues'
-  end
-  
+  get 'merge_issues/select/:issue_a_id', to: 'merge_issues#select_issue', as: 'select_merge_issue'
+  post 'merge_issues', to: 'merge_issues#merge'
+end

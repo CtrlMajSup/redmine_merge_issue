@@ -1,0 +1,12 @@
+<h1><%= l(:label_title_merge) %></h1>
+
+<%= form_with url: merge_issues_path, method: :post do %>
+  <div>
+    <label for="issue_b_id"> <%= l(:label_choose_dialog) %> </label>
+    <%= select_tag 'issue_b_id', options_from_collection_for_select(@issues, :id, :subject) %>
+    <%= hidden_field_tag 'issue_a_id', @issue_a.id %>
+  </div>
+  <%= submit_tag t('label_merge_issues') %>
+<% end %>
+
+<%= link_to t('cancel_merge'), issue_path(@issue_a) %>

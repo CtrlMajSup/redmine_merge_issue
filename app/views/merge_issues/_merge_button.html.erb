@@ -1,0 +1,3 @@
+<% if User.current.allowed_to?(:merge_issues, @project) %>
+  <%= link_to l(:label_merge_issues), select_merge_issue_path(issue_a_id: @issue.id),class: 'btn btn-primary' %>
+<% end %>

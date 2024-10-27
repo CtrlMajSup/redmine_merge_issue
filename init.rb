@@ -1,5 +1,4 @@
 require 'redmine'
-require_dependency 'merge_service'
 
 Redmine::Plugin.register :redmine_merge_issues do
   name 'Redmine Merge Issues Plugin'
@@ -8,5 +7,5 @@ Redmine::Plugin.register :redmine_merge_issues do
   version '0.1.0'
   requires_redmine :version_or_higher => '5.0.0'
 
-  permission :merge_issues, { merge_issues: :merge }, require: :member
+  permission :merge_issues, { merge_issues: [:merge, :select_issue] }, require: :member
 end

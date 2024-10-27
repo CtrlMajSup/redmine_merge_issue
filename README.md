@@ -18,3 +18,62 @@ The Redmine Merge Issues plugin provides a feature to merge two issues within Re
 
 **Usage**:
 The plugin adds a merge action button on each issue page (for users with appropriate permissions), enabling a straightforward merge process. This tool is particularly useful for managing duplicate tickets or consolidating related issues, enhancing data organization and reducing issue clutter within projects. 
+
+
+# Installation
+
+To install the **Redmine Merge Issues** plugin on a Redmine instance running under Apache, follow these steps:
+
+1. **Download and Install the Plugin**:
+   - Navigate to your Redmine plugins directory:
+     ```bash
+     cd /path/to/redmine/plugins
+     ```
+   - Clone or copy the `redmine_merge_issues` plugin into this directory:
+     ```bash
+     git clone https://github.com/yourrepo/redmine_merge_issues.git
+     ```
+
+2. **Restart Apache**:
+   - Since this plugin does not modify the database schema, no migrations are necessary. Simply restart Apache to load the plugin:
+     ```bash
+     sudo systemctl restart apache2
+     ```
+   - Alternatively, if you're using `passenger`, restart it to reload Redmine:
+     ```bash
+     touch /path/to/redmine/tmp/restart.txt
+     ```
+
+3. **Verify Installation**:
+   - Log in to Redmine, go to **Administration > Plugins**, and ensure that the **Redmine Merge Issues** plugin is listed and activated.
+
+The plugin should now be ready for use without requiring any database migration.
+
+
+
+# Environnement tested 
+
+```
+
+Environment:
+  Redmine version                5.1.3.stable
+  Ruby version                   3.2.4-p170 (2024-04-23) [x86_64-linux]
+  Rails version                  6.1.7.8
+  Environment                    production
+  Database adapter               PostgreSQL
+  Mailer queue                   ActiveJob::QueueAdapters::AsyncAdapter
+  Mailer delivery                smtp
+Redmine settings:
+  Redmine theme                  Default
+SCM:
+  Subversion                     1.14.2
+  Mercurial                      6.3.2
+  Cvs                            1.12.13
+  Bazaar                         3.3.2
+  Git                            2.39.2
+  Filesystem                     
+Redmine plugins:
+  redmine_merge_issues           0.1.0
+
+
+```
